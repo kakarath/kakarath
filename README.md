@@ -1,5 +1,5 @@
 ## Greetins and Salutations, 👋 I’m Pere (He/Him)
-### I'm a DevOps Engineer by day, a Full-Stack/Software Engineer by nightfall, and amature hobbist/UI/UX tinkerer in my free time. 
+### I'm a DevOps Engineer by day, a Full-Stack/Software Engineer by nightfall, and an amature hobbist/UI/UX tinkerer in my free time. 
 <!---
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
