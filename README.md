@@ -1,4 +1,4 @@
-## Greetins and Salutations, 👋 I’m Pere (He/Him)
+## Greetins and Salutations, 👋 I’m Pere
 ### Just a menssenger passing through life.
 ### I'm a DevOps Engineer by day, a Full-Stack/Software Engineer by nightfall, and an amateur hobbyist/UI/UX tinkerer in my free time. 
 <!---
