@@ -10,6 +10,8 @@
 
 💻 I work at [Bellese](https://www.bellese.io/about/team/pere-ozogu/)
 
+💞️ Volunteered during pandemic: (https://www.bellese.io/blog/life-amid-covid-19/)
+
 🎓 Graduate of the Department of Chemistry at [Purdue University](https://twitter.com/LifeAtPurdue)🚂
 
 🎓 Graduate of the School of Engineering's Technology Entrepreneurship (MPTE) at [University of Maryland](https://twitter.com/uofmaryland)🐢
