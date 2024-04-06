@@ -1,6 +1,6 @@
-## Greetins and Salutations, 👋 I’m Pere
-### Just a menssenger passing through life.
-### I'm a DevOps Engineer by day, a Full-Stack/Software Engineer by nightfall, and an amateur hobbyist/UI/UX tinkerer in my free time. 
+## Greetings and Salutations, 👋 I’m Pere
+### Just a messenger passing through life.
+### I'm a DevOps Engineer by day, a Full-Stack/Software Engineer by nightfall and, an amateur hobbyist/UI/UX tinkerer in my free time. 
 <!---
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
