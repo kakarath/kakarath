@@ -16,6 +16,8 @@
 
 🎓 Graduate of the School of Engineering's Technology Entrepreneurship (MPTE) at [University of Maryland](https://twitter.com/uofmaryland)🐢
 
+Find me at (https://www.linkedin.com/in/pere-ozogu-334153113/)
+
 You can find me on Instagram [@pere.ozogu](https://www.instagram.com/pere.ozogu).
 
 👨‍💻 https://kakarath.blogspot.com/?view=magazine
