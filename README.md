@@ -8,7 +8,7 @@
 - 📫 How to reach me ...
 --->
 
-💻 I work at [Bellese](https://github.com/bellese/)
+💻 I work at [Bellese](https://www.bellese.io/about/team/pere-ozogu/)
 
 🎓 Graduate of the Department of Chemistry at [Purdue University](https://twitter.com/LifeAtPurdue)🚂
 
