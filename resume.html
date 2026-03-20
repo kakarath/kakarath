@@ -44,6 +44,9 @@
             color: #007bff;
             text-decoration: none;
         }
+        .contact-info p {
+            margin: 5px 0;
+        }
         h2 {
             color: #007bff;
             font-size: 1.4em;
@@ -52,41 +55,111 @@
             border-left: 4px solid #007bff;
             padding-left: 10px;
         }
-        .job, .education {
-            margin-bottom: 20px;
+        .job {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
-        .job-title, .degree {
+        .job:last-child {
+            border-bottom: none;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        .job-title {
             font-weight: bold;
             font-size: 1.1em;
             color: #333;
         }
-        .company, .school {
+        .company {
             color: #007bff;
             font-style: italic;
         }
         .date {
             color: #999;
             font-size: 0.95em;
+            margin-left: 10px;
+        }
+        .location {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 3px;
         }
         ul {
             margin-left: 20px;
-            margin-top: 8px;
+            margin-top: 10px;
         }
         li {
             margin-bottom: 6px;
+            line-height: 1.5;
         }
         .skills-list {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            margin-top: 10px;
         }
         .skill-tag {
             background-color: #e8f4f8;
             color: #007bff;
-            padding: 5px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.9em;
             border: 1px solid #007bff;
+        }
+        .languages-list {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .language-item {
+            margin-bottom: 8px;
+        }
+        .language-name {
+            font-weight: bold;
+            color: #333;
+        }
+        .language-level {
+            color: #999;
+            font-size: 0.9em;
+        }
+        .education-item {
+            margin-bottom: 15px;
+        }
+        .degree {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .school {
+            color: #007bff;
+            font-style: italic;
+        }
+        .education-details {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 3px;
+        }
+        .certification-item {
+            margin-bottom: 12px;
+        }
+        .certification-name {
+            font-weight: bold;
+            font-size: 1.05em;
+            color: #333;
+        }
+        .certification-issuer {
+            color: #007bff;
+            font-style: italic;
+            margin-top: 2px;
+        }
+        .certification-details {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 2px;
         }
         @media (max-width: 600px) {
             .container {
@@ -94,6 +167,13 @@
             }
             h1 {
                 font-size: 1.8em;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .date {
+                margin-left: 0;
+                margin-top: 3px;
             }
         }
     </style>
@@ -103,63 +183,294 @@
         <header>
             <h1>Pere Ozogu</h1>
             <div class="contact-info">
-                <p>DevOps Engineer | Full-Stack/Software Engineer | UI/UX Enthusiast</p>
+                <p>Full-Stack Developer | Software Engineer</p>
+                <p>
+                    <a href="tel:765-491-4856">(765) 491-4856</a> |
+                    <a href="mailto:POZOGU00@gmail.com">POZOGU00@gmail.com</a>
+                </p>
                 <p>
                     <a href="https://linkedin.com/in/pere-ozogu-334153113">LinkedIn</a> |
-                    <a href="https://instagram.com/pere.ozogu">Instagram</a> |
-                    <a href="https://kakarath.blogspot.com">Blog</a>
+                    <a href="https://github.com/kakarath">GitHub</a>
                 </p>
             </div>
         </header>
 
         <section>
             <h2>Professional Summary</h2>
-            <p>DevOps Engineer by day, Full-Stack/Software Engineer by nightfall, and amateur hobbyist/UI/UX tinkerer in free time. Experienced in cloud infrastructure, software development, and technology entrepreneurship.</p>
+            <p>Experienced Full-Stack Developer with 15+ years of expertise in designing, developing, and deploying enterprise applications using modern technologies including ReactJS, Spring Boot, Java/J2EE, AWS, and microservices architecture. Proven track record in healthcare, insurance, financial, defense, and government sectors, with extensive experience in Oracle ADF, MVC frameworks, and agile development methodologies.</p>
+            <p>Skilled in end-to-end software development lifecycle, from requirements analysis through deployment, with strong focus on accessibility (Section 508 compliance), performance optimization, and user-centered design. Adept at mentoring teams, leading technical initiatives, and delivering high-quality solutions that drive business value.</p>
         </section>
 
         <section>
-            <h2>Experience</h2>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Java/J2EE</span>
+                <span class="skill-tag">ReactJS</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Oracle ADF</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">SQL/PLSQL</span>
+                <span class="skill-tag">Oracle WebLogic</span>
+                <span class="skill-tag">JSF</span>
+                <span class="skill-tag">JSP</span>
+                <span class="skill-tag">EJB</span>
+                <span class="skill-tag">JDBC</span>
+                <span class="skill-tag">XML</span>
+                <span class="skill-tag">jQuery</span>
+                <span class="skill-tag">AJAX</span>
+                <span class="skill-tag">JUnit</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Oracle Database</span>
+                <span class="skill-tag">Agile/SAFe</span>
+                <span class="skill-tag">DevSecOps</span>
+                <span class="skill-tag">API-First Design</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <div class="languages-list">
+                <div class="language-item">
+                    <span class="language-name">German</span> - <span class="language-level">Limited Conversational</span>
+                </div>
+                <div class="language-item">
+                    <span class="language-name">Japanese</span> - <span class="language-level">Limited Conversational</span>
+                </div>
+                <div class="language-item">
+                    <span class="language-name">Spanish</span> - <span class="language-level">Limited Conversational</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
             <div class="job">
-                <div class="job-title">DevOps & Full-Stack Engineer</div>
-                <div class="company">Bellese</div>
-                <div class="date">Current</div>
+                <div class="job-header">
+                    <span class="job-title">Full Stack Developer</span>
+                    <span class="date">October 2017 - Present</span>
+                </div>
+                <div class="company">Bellese Technologies LLC</div>
+                <div class="location">Owings Mills, MD</div>
+                <p><strong>Client:</strong> Centers for Medicare & Medicaid Services (CMS), Department of Health and Human Services (HHS)</p>
+
+                <h3>Modernization of Medicare Payment System Modernization (MPSM) - August 2021 to Present</h3>
+                <p>Led modernization of legacy COBOL/Mainframe infrastructure to cloud-ready React JS, Spring Boot microservices, and AWS ecosystem, enabling faster fee schedule estimations, accurate price calculations, and enhanced accessibility features.</p>
                 <ul>
-                    <li>Design and maintain scalable cloud infrastructure</li>
-                    <li>Develop full-stack applications</li>
-                    <li>Manage DevOps pipelines and deployment processes</li>
+                    <li>Implemented new architecture using React JS, Spring Boot, microservices, and AWS</li>
+                    <li>Mentored CMS staff on Spring Boot, ReactJS, and development environment setup</li>
+                    <li>Integrated CMS Design System templates and developed comprehensive training documentation</li>
+                    <li>Built reporting APIs and UI-dependent endpoints for data surfacing</li>
+                    <li>Implemented quarterly infrastructure updates and refined user stories/acceptance criteria</li>
+                    <li>Developed reusable React components and ensured Section 508 compliance</li>
+                    <li>Optimized SQL queries and implemented comprehensive JUnit test coverage</li>
+                    <li><strong>Applications:</strong> Web Pricer, PCS, Dental Claims</li>
+                    <li>Served as ADO representative in CMS mediation calls</li>
+                </ul>
+
+                <h3>Hospital Quality Reporting (HQR) System Modernization - October 2017 to July 2021</h3>
+                <p>Transformed legacy Waterfall methodology to Scaled Agile Framework (SAFe®) for CMS's ADELE program, modernizing quality initiatives with cloud-based microservices, API-First design, and DevSecOps practices.</p>
+                <ul>
+                    <li>Designed and implemented Angular, microservices, and AWS cloud architecture</li>
+                    <li>Led Oracle ADF legacy application integration and cloud migration initiatives</li>
+                    <li>Developed user interface components using Oracle ADF and JSF frameworks</li>
+                    <li>Created modular, reusable components including task flows, CSS, and page fragments</li>
+                    <li>Implemented Section 508 accessibility compliance and security measures</li>
+                    <li>Optimized SQL/PLSQL queries and maintained comprehensive test coverage</li>
+                    <li><strong>Applications Developed/Maintained:</strong> NoP, RA/VA, PRIS, OARS, PRS, WBDCT, HITECH</li>
+                    <li>Represented ADO in CMS and support contractor mediation calls</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Senior ADF Developer</span>
+                    <span class="date">October 2011 - September 2017</span>
+                </div>
+                <div class="company">Computer Sciences Corporation (CSC) / TEKsystems</div>
+                <div class="location">Columbia, MD</div>
+                <p><strong>Client:</strong> Centers for Medicare & Medicaid Services (CMS), Department of Health and Human Services (HHS)</p>
+                <p>Led development and modernization of Hospital Quality Reporting (HQR) applications for the Development Effort Consolidation Contract (DECC), ensuring continuous quality improvements for Medicare/Medicaid reimbursement programs.</p>
+                <ul>
+                    <li>Implemented end-to-end Oracle ADF solutions and designed database models</li>
+                    <li>Developed user interface components and enabled ADF security for portlets/WebCenter Portal</li>
+                    <li>Created modular components including task flows, CSS, and page fragments</li>
+                    <li>Implemented pagination, Section 508 compliance, and accessibility features</li>
+                    <li>Optimized SQL queries and maintained comprehensive JUnit test suites</li>
+                    <li><strong>Applications Developed:</strong> Notice of Participation (NoP), Report Authorization (RA), Online Forms, PRIS Prototype</li>
+                    <li><strong>Applications Maintained:</strong> OARS, PRS, OARS-PRS sync, PRS-OARS replication</li>
+                    <li><strong>Applications Supported:</strong> WBDCT, HITECH, and related reporting interfaces</li>
+                    <li>Served as ADO representative in CMS mediation calls</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Oracle ADF Developer</span>
+                    <span class="date">August 2010 - August 2011</span>
+                </div>
+                <div class="company">Injured Worker's Insurance Fund (IWIF)</div>
+                <div class="location">Towson, MD</div>
+                <p>Implemented Oracle Fusion 11G Middleware for Workers' Compensation Information Systems (WCIS), converting legacy Oracle Forms to modern ADF applications.</p>
+                <ul>
+                    <li>Developed ADF pages using Faces, JSF, and Trinidad Faces frameworks</li>
+                    <li>Created ADF Business Components including Entity Objects, View Objects, and Application Modules</li>
+                    <li>Implemented custom JavaScript, jQuery, and Groovy for business logic</li>
+                    <li>Converted ADF 10G pages to 11G Rich Faces components</li>
+                    <li>Developed CRUD screens with advanced validation and third-party integrations</li>
+                    <li>Implemented custom Managed/Backing beans and PhaseListeners</li>
+                    <li>Utilized JDBC programming and PL/SQL stored procedures</li>
+                    <li>Fixed UAT/QA defects and conducted comprehensive testing</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Oracle ADF Developer</span>
+                    <span class="date">May 2010 - June 2010</span>
+                </div>
+                <div class="company">Raytheon Company</div>
+                <div class="location">Burlington, MA</div>
+                <p><strong>Clearance:</strong> Secret</p>
+                <p>Developed Incident Tracking Systems (ITS) for Patriot Missile programs using Oracle ADF 11g and WebLogic Server 11g.</p>
+                <ul>
+                    <li>Built comprehensive ITS application for DOD incident tracking and reporting</li>
+                    <li>Implemented ADF Faces framework with Business Components and Task Flows</li>
+                    <li>Created CRUD screens with file upload, export, and PDF viewing capabilities</li>
+                    <li>Developed auto-refresh reports with CSV export functionality</li>
+                    <li>Collaborated with end users and business stakeholders for requirements gathering</li>
+                    <li>Implemented custom Java methods and PL/SQL procedures</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Oracle ADF Developer</span>
+                    <span class="date">February 2010 - April 2010</span>
+                </div>
+                <div class="company">Micros Systems Inc.</div>
+                <div class="location">Naples, FL</div>
+                <p>Migrated Opera Next Generation suite from Oracle Forms to Rich Internet Applications using Oracle ADF and SOA platform.</p>
+                <ul>
+                    <li>Designed rich user interfaces using ADF and JDeveloper for real-time SOA development</li>
+                    <li>Refactored ADF applications for Property Management System (PMS) and Revenue Management Systems (RMS)</li>
+                    <li>Created bounded/unbounded Task Flows and Worklists for business process management</li>
+                    <li>Implemented root cause analysis and defect resolution</li>
+                    <li>Developed comprehensive testing strategies and system documentation</li>
+                    <li>Created PL/SQL object types for Web Services integration</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Oracle Solutions Consultant</span>
+                    <span class="date">April 2009 - December 2009</span>
+                </div>
+                <div class="company">Accenture National Security Services (ANSS)</div>
+                <div class="location">Fairborn, OH</div>
+                <p><strong>Clearance:</strong> Secret</p>
+                <p>Developed Oracle Application Framework (OAF) solutions for USAF Financial Information Resource System (FIRST) Budget Formulation project.</p>
+                <ul>
+                    <li>Created OAF pages from legacy Oracle Forms and Reports conversions</li>
+                    <li>Developed prototypes for AFEMS Outbound, CCN Changer, and REMIS systems</li>
+                    <li>Implemented PL/SQL stored procedures and concurrent programs</li>
+                    <li>Conducted JAD sessions and created detailed business process models</li>
+                    <li>Presented design prototypes to Pentagon stakeholders</li>
+                    <li>Assessed data migration tools and implemented referential integrity constraints</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Oracle APEX Developer</span>
+                    <span class="date">October 2008 - April 2009</span>
+                </div>
+                <div class="company">BAE Systems</div>
+                <div class="location">Hudson, NH</div>
+                <p>Migrated Oracle Forms and Reports to Oracle Application Express (APEX) 3.2 for Electronics & Integrated Solutions group.</p>
+                <ul>
+                    <li>Created custom APEX applications for inventory, production, and demand reporting</li>
+                    <li>Implemented AJAX functionality for data filtering and validation</li>
+                    <li>Developed ad-hoc forms and drill-down reports using JavaScript and PL/SQL</li>
+                    <li>Created concurrent programs and refreshed custom database tables</li>
+                    <li>Coordinated bi-weekly status updates and presented progress reports</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Oracle EBS Developer</span>
+                    <span class="date">July 2008 - September 2008</span>
+                </div>
+                <div class="company">Southern Company</div>
+                <div class="location">Atlanta, GA</div>
+                <p>Designed and implemented Oracle Application modules (ICX, AP, PO) using JDeveloper and PL/SQL for Georgia Power Co.</p>
+                <ul>
+                    <li>Built Java programs integrating with Oracle Payables Workflow and IBM APIs</li>
+                    <li>Developed BI Publisher reports for Purchase Orders and Expense reports</li>
+                    <li>Extended iExpense functionality using Oracle Application Framework</li>
+                    <li>Created OAF pages communicating with Oracle Workflow and IBM software</li>
+                    <li>Generated AP Trial Balance and Payables Transferred to GL reports</li>
+                    <li>Implemented manual and automatic Purchase Order adjustments</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <h2>Education</h2>
-            <div class="education">
-                <div class="degree">Master of Professional and Technological Entrepreneurship (MPTE)</div>
-                <div class="school">University of Maryland - School of Engineering</div>
+            <div class="education-item">
+                <div class="degree">Post-baccalaureate Premedical Studies Certificate</div>
+                <div class="school">Elms College, Chicopee, MA</div>
+                <div class="education-details">May 2025</div>
             </div>
-            <div class="education">
-                <div class="degree">Bachelor of Science in Chemistry</div>
-                <div class="school">Purdue University</div>
+            <div class="education-item">
+                <div class="degree">Master of Professional Studies (M.P.S.) in Technology Entrepreneurship</div>
+                <div class="school">University of Maryland, College Park, MD</div>
+                <div class="education-details">December 2017</div>
             </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span class="skill-tag">DevOps</span>
-                <span class="skill-tag">Cloud Infrastructure</span>
-                <span class="skill-tag">Full-Stack Development</span>
-                <span class="skill-tag">Software Engineering</span>
-                <span class="skill-tag">UI/UX Design</span>
-                <span class="skill-tag">Leadership</span>
+            <div class="education-item">
+                <div class="degree">Bachelor of Science in Chemistry (ACS Certified; Specialization: Biochemistry)</div>
+                <div class="school">Purdue University, West Lafayette, IN</div>
+                <div class="education-details">August 2004</div>
             </div>
         </section>
 
         <section>
-            <h2>Volunteer Experience</h2>
-            <ul>
-                <li>Volunteer - Pandemic Response Initiative (via Bellese)</li>
-            </ul>
+            <h2>Licenses and Certifications</h2>
+            <div class="certification-item">
+                <div class="certification-name">Lifestyle Medicine & Food as Medicine Essentials Bundle</div>
+                <div class="certification-issuer">American College of Lifestyle Medicine</div>
+                <div class="certification-details">5.5 Credits | Issued September 2025</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">Basic Life Support for Healthcare Providers (BLS)</div>
+                <div class="certification-issuer">American Heart Association</div>
+                <div class="certification-details">Issued January 2025 | Expires January 2027 | Credential ID: 255416478833</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">Innovation for Entrepreneurs: From Idea to Marketplace</div>
+                <div class="certification-issuer">Coursera Course Certificates</div>
+                <div class="certification-details">Issued January 2016 | Credential ID: R7JSUTEGAXY8</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship</div>
+                <div class="certification-issuer">Coursera Course Certificates</div>
+                <div class="certification-details">Issued February 2015 | Credential ID: RALTYUBD3P</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">R Programming</div>
+                <div class="certification-issuer">Coursera Course Certificates</div>
+                <div class="certification-details">Issued October 2014</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">The Data Scientist's Toolbox</div>
+                <div class="certification-issuer">Coursera Course Certificates</div>
+                <div class="certification-details">Issued October 2014</div>
+            </div>
         </section>
     </div>
 </body>
