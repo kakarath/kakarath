@@ -10,7 +10,7 @@
 
 💻 I work at [Bellese](https://www.bellese.io/about/team/pere-ozogu/)
 
-💞️ Volunteered during pandemic (one of many): ([https://www.bellese.io/blog/life-amid-covid-19/](https://www.bellese.io/blog/life-amid-covid-19-were-all-in))
+💞️ Volunteered during pandemic (one of many): (https://www.bellese.io/blog/life-amid-covid-19-were-all-in)
 
 🎓 Graduate of the Department of Chemistry at [Purdue University](https://twitter.com/LifeAtPurdue)🚂
 
